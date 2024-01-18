@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    background-image: url(../img/background.jpg);
+    background-size: 200px;
+}
+
+.container {
+    background-color: #d1b38d;
+    width: 80%;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 100px auto;
+}
+
+@media screen and (min-width: 1024px) {
+    .container{
+        width: 40%;
+    }
+}
+
+.input-compiti {
+    border-radius: 6px;
+    width: 68%;
+    height: 40px;
+    padding-left: 10px;
+    border: none;
+}
+
+.button-aggiungi {
+    background-color: #C88E4F;
+    color: #ffffff;
+    border-radius: 6px;
+    height: 40px;
+    padding: 0 15px;
+    float: right;
+    border: none;
+    /* cambia il cursore */
+    cursor: pointer;
+}
+
+.button-aggiungi:hover {
+    opacity: 0.8;
+}
+
+.button-aggiungi:active {
+    opacity: 0.4;
+}
+
+.elenco{
+    width: 100%;
+    list-style: none;
+    margin-top: 25px;
+}
+
+.compiti{
+    background-color: #f2f2f2;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2);
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    margin-bottom: 18px;
+    border-radius: 6px;
+}
+
+img {
+    width: 25px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.compiti:hover img {
+    opacity: 1;
+}
+
+.compito-fatto {
+    background-color: #B46C06;
+    text-decoration: line-through;
+}
+
